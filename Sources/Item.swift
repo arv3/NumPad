@@ -6,7 +6,7 @@
 //  Copyright © 2018 Lasha Efremidze. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct Item {
     public var backgroundColor: UIColor? = .white
