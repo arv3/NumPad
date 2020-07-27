@@ -20,9 +20,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "NumPad",
-            dependencies: []),
+			path: "Sources",
+			exclude: ["Info.plist"]),
         .testTarget(
             name: "NumPadTests",
-            dependencies: ["NumPad"]),
+            dependencies: ["NumPad"],
+			path: "Tests",
+			exclude: ["Info.plist"]),
     ]
 )
